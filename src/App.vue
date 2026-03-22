@@ -61,7 +61,9 @@
 <script setup>
 import { onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
+import { useAppStore } from './stores/app'
 
+const store = useAppStore()
 const route = useRoute()
 const router = useRouter()
 
